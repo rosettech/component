@@ -1,0 +1,20 @@
+{
+  "name": "${name}",
+  "version": "${version}",
+  "description": "${description}",
+  "author": "${author}",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "efit release -l -r ./src -c -u -d ./lib --no-color",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT"
+}
